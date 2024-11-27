@@ -1,0 +1,17 @@
+@tailwind components;
+
+@layer components {
+  .hideArrows > input[type="number"]::-webkit-inner-spin-button,
+  .hideArrows > input[type="number"]::-webkit-outer-spin-button {
+    @apply tw-appearance-none tw-m-0;
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: none !important;
+  }
+  input:-internal-autofill-selected {
+    @apply !tw-bg-secondary;
+  }
+  .otp-input input {
+    @apply tw-text-center tw-bg-transparent tw-border-slate-300 tw-border-2 tw-rounded tw-p-1 tw-text-white !tw-w-8 !tw-h-8;
+  }
+}

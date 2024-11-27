@@ -1,0 +1,52 @@
+@tailwind components;
+
+@layer components {
+  .customToggleContainer .customToggleSwitch .customSwitch {
+    @apply tw-ease-in;
+  }
+  .customToggleContainer .customToggleSwitch .customSwitch::after {
+    @apply tw-absolute tw-text-white tw-top-1 tw-w-1/2 tw-text-center tw-mr-1.5 tw-ease-in;
+  }
+  .customToggleContainer .customToggleSwitch .customSwitch::before {
+    @apply tw-absolute tw-text-white tw-left-0 tw-top-1 tw-w-1/2 tw-rounded tw-text-center tw-ease-in;
+  }
+  .customToggleContainer
+    .customToggleSwitch
+    input[type="checkbox"]:checked
+    + .customSwitch::after {
+    @apply tw-left-0;
+  }
+  .customToggleContainer
+    .customToggleSwitch
+    input[type="checkbox"]:checked
+    + .customSwitch {
+    @apply tw-bg-tertiary;
+  }
+}
+
+.customToggleContainer .customToggleSwitch .customSwitch::after {
+  content: attr(data-after-content);
+  background: var(--background-off-color);
+  left: 50%;
+  width: 45%;
+}
+.customToggleContainer .customToggleSwitch .customSwitch::before {
+  content: attr(data-before-content);
+  width: 45%;
+}
+.customToggleContainer
+  .customToggleSwitch
+  input[type="checkbox"]:checked
+  + .customSwitch::before {
+  transform: translateX(110%);
+  content: attr(data-after-content);
+}
+.customToggleContainer
+  .customToggleSwitch
+  input[type="checkbox"]:checked
+  + .customSwitch::after {
+  transform: translateX(-10%) !important;
+  content: attr(data-before-content);
+  background: var(--background-on-color);
+  left: 10%;
+}

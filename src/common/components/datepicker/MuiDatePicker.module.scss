@@ -1,0 +1,21 @@
+// note: unsure why styled components or DatePicker API props do not work
+// in overriding Mui styles
+:global(.MuiCalendarPicker-viewTransitionContainer) {
+  :global(.Mui-selected:hover),
+  :global(.Mui-selected:focus),
+  :global(.Mui-selected:active) {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ffffff;
+  }
+}
+:global(.datefieldFilter) {
+  :global(.MuiOutlinedInput-root) {
+    :global(.MuiInputAdornment-root) {
+      :global(.MuiIconButton-edgeEnd) {
+        :global(.MuiSvgIcon-root) {
+          color: #697386;
+        }
+      }
+    }
+  }
+}

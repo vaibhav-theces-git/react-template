@@ -1,0 +1,17 @@
+.tokenSwitch {
+  :global(.react-switch-bg) {
+    width: 126px !important;
+  }
+  :global(.react-switch-handle) {
+    width: 66px !important;
+    > div {
+      width: 66px !important;
+      color: #ffffff6e !important;
+    }
+  }
+  :global(.react-switch-bg) {
+    > div {
+      width: 65px !important;
+    }
+  }
+}

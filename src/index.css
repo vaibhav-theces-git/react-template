@@ -1,0 +1,214 @@
+@tailwind components;
+@tailwind utilities;
+
+/* Firefox */
+html {
+  scrollbar-color: #282a3d #3c4257;
+  scrollbar-width: thin;
+}
+
+/* WebKit and Chromiums */
+::-webkit-scrollbar {
+  background: #282a3d;
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3c4257;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #040a17;
+  /* cover up white background */
+  min-height: 100vh;
+}
+root {
+  height: 100vh;
+}
+.tw-overflow-overlay {
+  overflow: overlay;
+}
+.tw-overflow-x-overlay {
+  overflow-x: overlay;
+}
+.tw-overflow-y-overlay {
+  overflow-y: overlay;
+}
+#body .-tw-rotate-90 {
+  transform: rotate(-90deg);
+}
+
+.tw-overflow-overlay {
+  overflow: overlay;
+}
+.tw-overflow-x-overlay {
+  overflow-x: overlay;
+}
+.tw-overflow-y-overlay {
+  overflow-y: overlay;
+}
+#body .-tw-rotate-90 {
+  transform: rotate(-90deg);
+}
+
+.tw-overflow-overlay {
+  overflow: overlay;
+}
+.tw-overflow-x-overlay {
+  overflow-x: overlay;
+}
+.tw-overflow-y-overlay {
+  overflow-y: overlay;
+}
+#body .-tw-rotate-90 {
+  transform: rotate(-90deg);
+}
+
+.tw-overflow-overlay {
+  overflow: overlay;
+}
+.tw-overflow-x-overlay {
+  overflow-x: overlay;
+}
+.tw-overflow-y-overlay {
+  overflow-y: overlay;
+}
+#body .-tw-rotate-90 {
+  transform: rotate(-90deg);
+}
+#body .tw-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.animate-blink {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@layer components {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"] {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.nodatatext-left {
+  text-align: left !important;
+  justify-content: left !important;
+}
+
+.nodatamessage {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ag-child-grid {
+  padding: 10px;
+}
+
+.ag-theme-alpine {
+  --ag-foreground-color: #ffffff !important;
+  --ag-background-color: #141a2a !important;
+  --ag-header-foreground-color: #ffffff !important;
+  --ag-header-background-color: #202739 !important;
+  --ag-odd-row-background-color: #141a2a !important;
+  --ag-header-column-resize-handle-color: rgb(126, 46, 132) !important;
+  --ag-font-size: 12px !important;
+  --ag-header-font-size: 12px !important;
+  --ag-border-color: #313a49 !important;
+  --ag-header-cell-text: 12px !important;
+  --ag-secondary-border-color: #313a49 !important;
+  --ag-control-panel-background-color: #141a2a !important;
+  --ag-font-family: Fraktion Sans, Helvetica Neue, Helvetica, sans-serif !important;
+}
+
+.ag-header-cell-text {
+  font-size: 12px;
+}
+
+.custommodal .MuiDialogContent-root.tw-pt-2.css-ypiqx9-MuiDialogContent-root {
+  padding: 15px 0 !important;
+}
+.custommodal
+  .MuiContainer-root.MuiContainer-maxWidthLg.tw-h-full.css-1oqqzyl-MuiContainer-root {
+  padding: 0 !important;
+}
+
+.notificationmodal
+  .MuiDialogContent-root.tw-pt-2.css-ypiqx9-MuiDialogContent-root {
+  overflow-y: hidden;
+}
+.notificationmodal.css-1qwe30p-MuiPaper-root-MuiDialog-paper {
+  display: block !important;
+  max-height: 100% !important;
+}
+
+.apexcharts-menu-item.exportCSV {
+  display: none;
+}
+.vbt_breach_highlight {
+  background: rgb(14, 83, 5) !important;
+}
+
+.new_records_highlight {
+  background: rgb(14, 83, 5) !important;
+}
+
+#batchConfigurationTable .ag-header-cell.text-center .ag-header-cell-label {
+  justify-content: center;
+}
+#batchConfigurationDetails .ag-cell-label-container .ag-header-cell-label {
+  justify-content: center;
+}
+#SpotVolConfigurationTable .ag-ltr .ag-cell {
+  display: flex;
+  justify-content: center;
+}
+
+#SpotVolAnalysisV1Grid .ag-header-cell.text-center .ag-header-cell-label,
+#SpotVolAnalysisV2Grid .ag-header-cell.text-center .ag-header-cell-label {
+  justify-content: center;
+}
+
+#SpotVolAnalysisV1Grid .ag-header,
+#SpotVolAnalysisV1Grid .ag-header .ag-header-row,
+#SpotVolAnalysisV1Grid .ag-header .ag-header-row .ag-header-cell,
+#SpotVolAnalysisV2Grid .ag-header,
+#SpotVolAnalysisV2Grid .ag-header .ag-header-row,
+#SpotVolAnalysisV2Grid .ag-header .ag-header-row .ag-header-cell {
+  height: 30px !important;
+  min-height: unset !important;
+}
+
+#SpotVolAnalysisV1Grid .ag-row-odd,
+#SpotVolAnalysisV2Grid .ag-row-odd {
+  background: #212740;
+}
+#spotvolv1-y-axis-title {
+  writing-mode: vertical-lr;
+  transform: rotateZ(180deg);
+}

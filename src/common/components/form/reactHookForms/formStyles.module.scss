@@ -1,0 +1,37 @@
+.input {
+  :global(.MuiFormHelperText-root) {
+    margin: 0 0 4px 4px;
+    height: 0;
+  }
+}
+
+.input-h-auto {
+  :global(.MuiFormHelperText-root) {
+    margin: 0 0 4px 4px;
+    height: auto;
+    line-height: 1.25;
+  }
+}
+
+.input-custom-1 {
+  :global(.MuiFormHelperText-root) {
+    margin: 4px 4px 0 4px;
+    height: auto;
+    line-height: 1.25;
+  }
+  :global(.MuiInputBase-root) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  :global(.MuiInputBase-input) {
+    border-color: transparent;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  :global(.MuiFormLabel-root) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

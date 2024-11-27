@@ -1,0 +1,13 @@
+/* custom due to atomic component styles */
+.container-default {
+  line-height: 10px !important;
+  padding: 5px 6px !important;
+}
+
+.mr3p {
+  margin-right: 3px;
+}
+
+.ml3p {
+  margin-left: 3px;
+}
